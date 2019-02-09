@@ -1,7 +1,6 @@
 public class Sim2_AdderX {
 
     public void execute() {
-        boolean carryIn = false;
         for (int i = 0; i < a.length; i++) {
             ripple[i].a.set(a[i].get());
             ripple[i].b.set(b[i].get());
@@ -17,6 +16,7 @@ public class Sim2_AdderX {
         overflow.set(xor.out.get());
     }
 
+    boolean carryIn;
     // necessary ops
     Sim2_FullAdder[] ripple;
     Sim2_XOR xor;
@@ -26,7 +26,11 @@ public class Sim2_AdderX {
     public RussWire[] sum;
     public RussWire carryOut, overflow;
 
+    /**
+     * Initializes all the neccesary components
+     */
     public Sim2_AdderX(int X) {
+        boolean carryIn = false;
         a = new RussWire[X];
         b = new RussWire[X];
         sum = new RussWire[X];

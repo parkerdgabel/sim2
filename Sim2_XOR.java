@@ -1,8 +1,15 @@
+/**
+ * @author Parker Gabel
+ * Class: CS252
+ * Assignment: Sim2
+ * File: Sim2_XOR.java
+ * This class implements XOR logic using Russwires
+ */
 public class Sim2_XOR {
 
     /**
-     *  XOR is equivalent to the boolean function
-     *    x XOR y = (x or y) and not (x and y)
+     * XOR is equivalent to the boolean function
+     * x XOR y = (x or y) and not (x and y)
      */
     public void execute() {
         // Set initial values.
@@ -32,6 +39,9 @@ public class Sim2_XOR {
     // outputs
     public RussWire out;
 
+    /**
+     * Initializes all the neccesary components
+     */
     public Sim2_XOR() {
         internalAnd = new AND();
         mainAnd = new AND();

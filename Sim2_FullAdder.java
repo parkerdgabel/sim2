@@ -1,3 +1,10 @@
+/**
+ * @author Parker Gabel
+ * Class: CS252
+ * Assignment: Sim2
+ * File: Sim2_FullAdder.java
+ * This class implements Full adder logic using Russwires and Half adders
+ */
 public class Sim2_FullAdder {
 
     public void execute() {
@@ -25,6 +32,9 @@ public class Sim2_FullAdder {
     // outputs
     public RussWire sum, carryIn, carryOut;
 
+    /**
+     * Initializes all the neccesary components
+     */
     public Sim2_FullAdder() {
         firstAdder = new Sim2_HalfAdder();
         secondAdder = new Sim2_HalfAdder();
